@@ -219,3 +219,4 @@ C:\Users\dell XPS\Desktop\Etude\Licence 3\C#\application\GestionDette\GestionDet
 C:\Users\dell XPS\Desktop\Etude\Licence 3\C#\application\GestionDette\GestionDette\obj\Debug\net8.0\GestionDette.pdb
 C:\Users\dell XPS\Desktop\Etude\Licence 3\C#\application\GestionDette\GestionDette\obj\Debug\net8.0\GestionDette.genruntimeconfig.cache
 C:\Users\dell XPS\Desktop\Etude\Licence 3\C#\application\GestionDette\GestionDette\obj\Debug\net8.0\ref\GestionDette.dll
+C:\Users\dell XPS\Desktop\Etude\Licence 3\C#\application\GestionDette\GestionDette\obj\Debug\net8.0\GestionDette.sourcelink.json

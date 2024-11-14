@@ -26,9 +26,9 @@ public class Client
     1.Fixtures Client , User et Dette
     2.Liste des Clients
     3.Creer un Client
-     Validator UniqueTelephone
-     Validator UniqueSurname
-     Validor Unique
+        Validator UniqueTelephone
+        Validator UniqueSurname
+        Validor Unique
     
      */
 

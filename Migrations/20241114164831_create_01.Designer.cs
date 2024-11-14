@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionDette.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241113192902_AdresseNullable")]
-    partial class AdresseNullable
+    [Migration("20241114164831_create_01")]
+    partial class create_01
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

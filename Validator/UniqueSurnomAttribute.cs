@@ -15,7 +15,7 @@ public class UniqueSurnomAttribute : ValidationAttribute
         {
             return new ValidationResult("Ce surnom est déjà utilisé.");
         }
-       
+
         return ValidationResult.Success;
     }
 }
