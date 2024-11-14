@@ -16,7 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
             new MySqlServerVersion(new Version(8, 0, 40))));
 
 
-// Configure the services for the application.
+// configuration des services de l'application
 /* 
     AddTransient => Créer à chaque fois
     AddScoped => Créer une instance unique pour la durée de la requête

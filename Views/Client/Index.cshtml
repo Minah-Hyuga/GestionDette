@@ -1,20 +1,18 @@
 ﻿@using Cours.Models
-@* @model type_de_la_donne *@
 @model IEnumerable<Client>
-
 
 @{
     ViewData["Title"] = "Client Page";
-    @* Layout = "_Layout"; *@
 }
 
+<h1>Gestion Dette</h1>
+
 <div class="card">
-    <div class="card-header">Liste clients</div>
+    <div class="card-header">Client</div>
     <div class="card-body">
-        <div class="my-2 d-flex justify-content-end ">
+        <div class="my-2 d-flex justify-content-end">
             <a class="btn btn-outline-dark" asp-action="Create">Nouveau client</a>
         </div>
-
 
         @if (TempData["Message"] != null)
         {
@@ -36,15 +34,11 @@
                 <tbody>
                     @foreach (var client in Model)
                     {
-                        <tr class="">
+                        <tr>
                             <td>@Html.DisplayFor(modelItem => client.Id)</td>
-
                             <td>@Html.DisplayFor(modelItem => client.Surnom)</td>
-
                             <td>@Html.DisplayFor(modelItem => client.Telephone)</td>
-
                             <td>@Html.DisplayFor(modelItem => client.Adresse)</td>
-
                             <td>
                                 <a href="@Url.Action("DetteClient", "Dette", new { clientId = client.Id })"
                                     class="btn btn-outline-primary">Dettes</a>
@@ -54,7 +48,7 @@
                 </tbody>
             </table>
             <nav aria-label="Page navigation" class="float-end">
-                <ul class="pagination    ">
+                <ul class="pagination">
                     <li class="page-item disabled">
                         <a class="page-link" href="#" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
@@ -74,7 +68,6 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
-
     </div>
+</div>

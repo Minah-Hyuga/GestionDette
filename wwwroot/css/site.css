@@ -1,22 +1,89 @@
-html {
-  font-size: 14px;
+/* Style global de la table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+th, td {
+  padding: 12px;
+  text-align: left;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* En-tête de la table */
+th {
+  background-color: #e5e5e5; /* Utilisation d'un gris doux pour l'en-tête */
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+/* Lignes de la table */
+tr:nth-child(even) {
+  background-color: #f5f5f5;
 }
 
-body {
-  margin-bottom: 60px;
+tr:hover {
+  background-color: #dddddd; /* Gris encore plus doux pour le survol */
+  color: #000000;
+}
+
+/* Bordures de la table */
+table, th, td {
+  border: 1px solid #e5e5e5;
+}
+
+/* Surlignage des cellules spécifiques (par exemple 'Client') */
+th.client-column, td.client-column {
+  font-weight: bold;
+  color: #000000; /* Couleur neutre pour 'Client' */
+}
+
+/* Style pour le titre */
+h1 {
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #e5e5e5; /* Bordure gris clair */
+}
+
+/* Style des champs de formulaire */
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+
+/* Focus sur les champs */
+input:focus, select:focus {
+  outline: none;
+  border-color: #cccccc; /* Couleur neutre pour le focus */
+  background-color: #f0f0f0; /* Couleur douce au focus */
+}
+
+/* Bouton d'action */
+button {
+  background-color: #e5e5e5; /* Gris doux pour le bouton */
+  color: #000000; /* Assurez-vous que le texte du bouton est noir ou une autre couleur de votre choix */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none; /* Éviter les sous-lignements par défaut des liens */
+}
+
+button:hover {
+  background-color: #cccccc; /* Gris clair pour le survol du bouton */
+  color: #000000;
 }
